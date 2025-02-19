@@ -32,14 +32,12 @@
 
 
 \setlength{\columnseprule}{1.5pt}
-\colseprulecolor{red}
+%\colseprulecolor{red}
 \setlength{\columnsep}{1.5cm}
 \columnratio{0.23}[0.75]
 \begin{paracol}{2}
   
 \vspace*{-6em}
-%\noindent
-%\hfil
 \hbadness5000
 %\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
 
@@ -53,46 +51,64 @@
 %    \roundpic{pdf-image/face.jpg}
 %\end{center}
 
+\flushleft
+ISAAC RHETT
+Security Engineer
+
 \bg{cvgreen}{white}{About me}\\[0.5em]
-A software developer with a nontraditional background, I am passionate about cybersecurity and education.
+A software developer with a nontraditional background, 
+
+I am passionate about cybersecurity and education.
 
 \bigskip
 
-\bg{cvgreen}{white}{personal} \\[0.5em]
-Jack Sparrow
+\bg{cvgreen}{white}{Skills} \\[0.5em]
+Languages:
+  \texttt{
+    \begin{itemize}
+      \item Bash
+      \item C / C++
+      \item Go
+      \item HTML / CSS
+      \item Java
+      \item Javascript
+      \item \href{https://github.com/izcet/latex-resume}{\LaTeX{}}
+      \item PHP
+      \item Python
+      \item Ruby
+      \item Scala
+      \item Zig
+    \end{itemize}
+  }
 
-nationality: English 
 
-1690
+Concepts:
+  \texttt{
+    \begin{itemize}
+      \item Android
+      \item Linux
+      \item Reverse Engineering
+      \item Cryptography / PKI
+    \end{itemize}
+  }
 
 \bigskip
 
-\bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
 
-Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
+\bg{cvgreen}{white}{Soft Skills} \\[0.5em]
 
-\bigskip
-
-\bigskip
-
-\bg{cvgreen}{white}{Interests}\\[0.5em]
-
-\lorem
-\bigskip
-
-\bg{cvgreen}{white}{Interests}\\[0.5em]
-
-\texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
-
-\texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
-
-\texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+\item Communication
+\item Problem Solving
+\item Critical Thinking
+\item Presentation and Speaking
+\item Interpersonal Collaboration
 
 \vspace{4em}
 
+\infobubble{\faPhone}{cvgreen}{white}{8 6 7 5 3 0 9}
 \infobubble{\faAt}{cvgreen}{white}{irhett@pm.me}
-\infobubble{\faLinkedin}{cvgreen}{white}{irhett}
-\infobubble{\faGithub}{cvgreen}{white}{izcet}
+\infobubble{\faLinkedin}{cvgreen}{white}{\href{https://www.linkedin.com/in/irhett/}{irhett}}
+\infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/izcet/}{izcet}}
 
 \phantom{turn the page}
 
@@ -101,21 +117,30 @@ Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
 %-----------------------------------------------------------
 \switchcolumn
 \small
-\vspace*{-6em}
+\vspace*{-8em}
 \section*{Work Experience}
 
 \begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back.\lorem\lorem\lorem}{pdf-image/disney.png} \\
-    \cvevent{2016--2017}{Captain of the Black Pearl}{Lead}{Tortuga \color{cvred}}{Found a secret treasure, lost the ship. \lorem\lorem}{pdf-image/medal.jpeg}
+    \cvevent{2024--2025}{Sabbatical}{Recurse Center}{NYC \color{cvred}}{\lorem\lorem}{pdf-image/recurse.png} \\
+    \cvevent{2022--2024}{Security Engineer}{Google}{Mountain View \color{cvred}}{\lorem\lorem}{pdf-image/google.png} \\
+    \cvevent{2018-2022}{Security Intelligence Engineer}{Lookout}{Boston \color{cvred}}{\lorem\lorem}{pdf-image/lookout2.png} \\
+    \cvevent{2018}{Internship}{OtoSense / Analog Devices}{Palo Alto \color{cvred}}{\lorem\lorem}{pdf-image/otosense.jpg}
+\end{tabular}
+\vspace{1em}
+
+\section*{Education}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2016--2018}{Student}{42 Silicon Valley}{Fremont \color{cvred}}{\lorem\lorem}{pdf-image/42.jpg}
 \end{tabular}
 \vspace{3em}
 
 \begin{minipage}[t]{0.35\textwidth}
 \section*{Degrees}
 \begin{tabular}{r p{0.6\textwidth} c}
-    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{pdf-image/disney.png} \\
-    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{pdf-image/medal.jpeg} \\
-    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{pdf-image/medal.jpeg}
+    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{pdf-image/lookout1.png} \\
+    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{pdf-image/lookout1.png} \\
+    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{pdf-image/lookout1.png}
 \end{tabular}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.3\textwidth}
@@ -129,11 +154,11 @@ Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
 \end{tabular}
 \end{minipage}
 
-\section*{Curriculum}
-\begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back. \lorem}{pdf-image/disney.png} \\
-    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga \color{cvred}}{This and that. The usual, aye?  \lorem}{pdf-image/medal.jpeg} \\
-\end{tabular}
+%\section*{Curriculum}
+%\begin{tabular}{r| p{0.5\textwidth} c}
+%    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back. \lorem}{pdf-image/disney.png} \\
+%    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga \color{cvred}}{This and that. The usual, aye?  \lorem}{pdf-image/lookout1.png} \\
+%\end{tabular}
 \vspace{3em}
 
 \begin{minipage}[t]{0.3\textwidth}
