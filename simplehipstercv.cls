@@ -6,6 +6,7 @@
 \RequirePackage{xcolor}
 
 \definecolor{headercolour}{rgb}{0.25,0.25,0.25}
+\definecolor{cvgreen}{HTML}{115522}
 %-------------------------------------------------------
 \definecolor{materialpurple}{HTML}{9C27B0}
 \definecolor{materialindigo}{HTML}{3F51B5}
@@ -29,9 +30,7 @@
 \colorlet{headercolour}{black!90}
 
 \definecolor{cvred}{HTML}{E1592E}
-\definecolor{cvgreen}{HTML}{5DE12E}
 
-\colorlet{cvgreen}{cvred}
 \colorlet{cvpurple}{headerblue}
 
 % TIMELINE
@@ -67,8 +66,6 @@
 \definecolor{cvpurple}{HTML}{B32EE1}
 
 \definecolor{cvred}{HTML}{E1592E}
-\definecolor{cvgreen}{HTML}{5DE12E}
-\colorlet{cvgreen}{headerblue}
 \colorlet{cvpurple}{cvred}
 
 % TIMELINE
@@ -76,9 +73,9 @@
 \definecolor{jackbeige}{RGB}{226,212,186}  
 
 \newcommand{\paracolbackgroundoptions}{
-\backgroundcolor{c[0](4pt,4pt)(0.5\columnsep,4pt)}[rgb]{0.9,0.9,0.9}
+\backgroundcolor{c[0](4pt,4pt)(0.5\columnsep,4pt)}[rgb]{0.95,0.95,0.95}
 \backgroundcolor{c[1](0.5\columnsep,4pt)(4pt,4pt)}[rgb]{1,1,1}
-\backgroundcolor{C[0](10000pt,10000pt)(0.5\columnsep,10000pt)}[rgb]{0.9,0.9,0.9}
+\backgroundcolor{C[0](10000pt,10000pt)(0.5\columnsep,10000pt)}[rgb]{0.95,0.95,0.95}
 \backgroundcolor{C[1](0.5\columnsep,10000pt)(10000pt,10000pt)}[rgb]{1,1,1}
 }
 \newcommand{\setasidefontcolour}{
@@ -98,7 +95,6 @@
 \definecolor{cvpurple}{HTML}{B66978}
 
 \definecolor{cvred}{HTML}{B66978}
-\definecolor{cvgreen}{HTML}{78B669}
 
 
 % TIMELINE
@@ -130,7 +126,6 @@
 \definecolor{cvpurple}{HTML}{000000}
 
 \definecolor{cvred}{HTML}{000000}
-\definecolor{cvgreen}{HTML}{000000}
 
 \colorlet{headercolour}{black!90}
 
@@ -183,7 +178,6 @@
 \definecolor{cvpurple}{HTML}{b3b3b3}
 
 \definecolor{cvred}{HTML}{b3b3b3}
-\colorlet{cvgreen}{black!50}
 
 
 % TIMELINE
@@ -236,7 +230,6 @@
 \definecolor{cvpurple}{HTML}{b3b3b3}
 
 \definecolor{cvred}{HTML}{b3b3b3}
-\definecolor{cvgreen}{HTML}{00b3b3}
 
 
 % TIMELINE
@@ -287,7 +280,7 @@
 \definecolor{cvpurple}{HTML}{b3b3b3}
 
 \definecolor{cvred}{HTML}{b3b3b3}
-\definecolor{cvgreen}{HTML}{00b3b3}
+\definecolor{cvgreen}{HTML}{115522}
 
 
 % TIMELINE
