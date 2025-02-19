@@ -16,28 +16,30 @@
 \setlength{\rightcolwidth}{0.75\textwidth}
 
 %------------------------------------------------------------------
-\title{New Simple CV}
-\author{\LaTeX{} Ninja}
-\date{June 2019}
+\title{Resume}
+\author{Isaac Rhett}
+\date{February 2025}
 
 \pagestyle{empty}
 \begin{document}
-
-
 \thispagestyle{empty}
 
 %-------------------------------------------------------------
-\section*{Start}
-\simpleheader{headercolour}{Jack}{Sparrow}{Captain}{white}
-
-%------------------------------------------------
-% this has to be here so the paracols starts..
+\subsection*{}
+%\simpleheader{headercolour}{Jack}{Sparrow}{Captain}{white}
 \subsection*{}
 \vspace{4em}
 
+
+\setlength{\columnseprule}{1.5pt}
+\colseprulecolor{red}
 \setlength{\columnsep}{1.5cm}
 \columnratio{0.23}[0.75]
 \begin{paracol}{2}
+  
+\vspace*{-6em}
+%\noindent
+%\hfil
 \hbadness5000
 %\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
 
@@ -47,9 +49,9 @@
 \footnotesize
 {\setasidefontcolour
 \flushright
-\begin{center}
-    \roundpic{pdf-image/jack.jpg}
-\end{center}
+%\begin{center}
+%    \roundpic{pdf-image/face.jpg}
+%\end{center}
 
 \bg{cvgreen}{white}{About me}\\[0.5em]
 
@@ -100,8 +102,8 @@ Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
 }
 %-----------------------------------------------------------
 \switchcolumn
-
 \small
+\vspace*{-6em}
 \section*{Short Resumé}
 
 \begin{tabular}{r| p{0.5\textwidth} c}
@@ -119,7 +121,7 @@ Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
 \end{tabular}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.3\textwidth}
-\section*{Programming}
+\section*{Programming}%
 \begin{tabular}{r @{\hspace{0.5em}}l}
      \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
      \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen} \\
@@ -170,17 +172,20 @@ Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
 \end{minipage}
 
 \vfill{} % Whitespace before final footer
-
+\vspace{12em}
 %----------------------------------------------------------------------------------------
 %	FINAL FOOTER
 %----------------------------------------------------------------------------------------
-\setlength{\parindent}{0pt}
-\begin{minipage}[t]{\rightcolwidth}
-\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
-{\small Jack Sparrow \icon{\faEnvelopeO}{cvgreen}{} The Black Pearl \icon{\faMapMarker}{cvgreen}{} Tortuga \icon{\faPhone}{cvgreen}{} 0099/333 5647380 \newline\icon{\faAt}{cvgreen}{} \protect\url{jack@sparrow.com}
-}
-\end{center}
-\end{minipage}
+%\setlength{\parindent}{0pt}
+%\begin{minipage}[t]{\rightcolwidth}
+%\vfill
+%\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+%{
+%  \small{asdf}\newline\small{asdf}
+%\small Jack Sparrow \icon{\faEnvelopeO}{cvgreen}{} The Black Pearl \icon{\faMapMarker}{cvgreen}{} Tortuga \icon{\faPhone}{cvgreen}{} 0099/333 5647380 \newline\icon{\faAt}{cvgreen}{} \protect\url{jack@sparrow.com}
+%}
+%\end{center}
+%\end{minipage}
 
 \end{paracol}
 
