@@ -39,7 +39,7 @@
 \columnratio{0.23}[0.75]
 \begin{paracol}{2}
   
-\vspace*{-6em}
+\vspace*{-7em}
 \hbadness5000
 %\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
 
@@ -108,6 +108,7 @@ Concepts:
   \texttt{
     \begin{itemize}
       \item Android
+      \item Code Review
       \item Cryptography / PKI
       \item Linux / Unix
       \item Reverse Engineering
@@ -128,10 +129,15 @@ Concepts:
 \item Presentation and Speaking
 \item Problem Solving
 
-\vspace{4em}
+\bigskip
 
-\infobubble{\faPhone}{cvgreen}{white}{8 6 7 5 3 0 9}
-\infobubble{\faAt}{cvgreen}{white}{irhett@pm.me}
+
+\bg{cvgreen}{white}{Contact} \\[0.5em]
+
+\infobubble{\faPhone}{cvgreen}{white}{Signal:\href{https://signal.me/\#eu/n6vUIaa2hD\_QyqnlLw0l8St7NPlS4kB91YU0XvO7ToLoG6uvamZExYdkxViihQ7g}{irhett.42}}
+\infobubble{\faAt}{cvgreen}{white}{\href{https://matrix.to/\#/@irhett:matrix.org}{@irhett:matrix.org}}
+%\infobubble{\faAt}{cvgreen}{white}{irhett@pm.me}
+\infobubble{\faEnvelope}{cvgreen}{white}{irhett@pm.me}
 \infobubble{\faLinkedin}{cvgreen}{white}{\href{https://www.linkedin.com/in/irhett/}{irhett}}
 \infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/izcet/}{izcet}}
 
@@ -146,22 +152,22 @@ Concepts:
 
 % TODO swap company and job
 \section*{Work Experience}
-\begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2024--2025}{Recurse Center}{Sabbatical}{NYC \color{cvred}}{
+\begin{tabular}{p{0.58\textwidth} c}
+    \cveventtwo{Sabbatical ~•~ Recurse Center}{2024--2025}{NYC \color{cvred}}{
       \setstretch{0}
       \begin{itemize}
         \item foo
         \item bar
       \end{itemize}
     }{pdf-image/recurse.png} \\
-    \cvevent{2022--2024}{Google}{Security Engineer}{Mountain View \color{cvred}}{
+    \cveventtwo{Security Engineer ~•~ Google}{2022--2024}{Mountain View \color{cvred}}{
       I worked with cross functional teams to protect end-users from privacy risks and scaled abuse vectors on the Google Play Store.
       I also identified threats in the android developer ecosystem both on and off Play, and wrote tooling to automate detection and removal of malicious apps and SDK supply chain threats.
     }{pdf-image/google.png} \\
-    \cvevent{2018-2022}{Lookout}{Security Intelligence Engineer}{Boston \color{cvred}}{
+    \cveventtwo{Security Intelligence Engineer ~•~ Lookout}{2018-2022}{Boston \color{cvred}}{
       I contributed to Lookout's core mobile app analysis pipeline which performs cross-platform static and dynamic analysis. The analysis pipeline is capable of ingesting, decomposing, analyizng, and applying plicy to 100s of millions of Android and iOS mobile applications. This data is then used to detect malware, and enforce enterprise data security policies.
   }{pdf-image/lookout2.png} \\
-    \cvevent{2018}{OtoSense / Analog Devices}{Internship}{Palo Alto \color{cvred}}{
+    \cveventtwo{Internship ~•~ OtoSense / Analog Devices}{2018}{Palo Alto \color{cvred}}{
       In this fact paced and dynamic work environment, I was responsible for creating software tools that directly impacted the core mission of the company.
       I developed in embedded C for data acquisition, and Python for data analysis and rendering.
     }{pdf-image/otosense.jpg}
@@ -169,17 +175,17 @@ Concepts:
 \bigskip
 
 \section*{Education}
-\begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2016--2018}{42 Silicon Valley}{Student}{Fremont \color{cvred}}{A rigorous tuition-free project-based computer science program with a peer-to-peer, self paced curriculum.}{pdf-image/42.jpg}
+\begin{tabular}{p{0.6\textwidth} c}
+  \cveventtwo{42 Silicon Valley}{2016--2018}{Fremont \color{cvred}}{A rigorous tuition-free project-based computer science program with a peer-to-peer, self paced curriculum.}{pdf-image/42.jpg}
 \end{tabular}
 \bigskip
 
 \section*{Projects}
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
-  \href{https://github.com/izcet/fractol}{Fractol} & A parallelized fractal renderer including side projects for color generation. \\
-    \href{https://github.com/izcet/ft_ssl_des}{ft\_ssl DES} & Reimplemented functionality of OpenSSL with several block cipher modes. \\
-    \href{https://github.com/izcet/signal-apk-updater}{DeGoogled Signal} & Secure automation of acquisition and install of direct-download Signal APK. \\
-    \href{https://github.com/sedson/sludge-game}{Sludge Game} & Game-jam collab using Vanilla JS and WebGL. \href{https://sedson.itch.io/form-of-danger}{Live demo}. 
+    \href{https://github.com/izcet/signal-apk-updater}{DeGoogled Signal} & Secure bash automated acquisition and install of direct-download Signal APK. \\
+    \href{https://github.com/sedson/sludge-game}{Sludge Game} & Game-jam collab using Vanilla JS and WebGL. Live demo on \href{https://sedson.itch.io/form-of-danger}{itch.io}.  \\
+    \href{https://github.com/izcet/ft_ssl_des}{ft\_ssl DES} & Reimplemented OpenSSL commands in C with several block cipher modes. \\
+  \href{https://github.com/izcet/fractol}{Fractol} & A parallelized fractal renderer in C including side projects for color generation. 
 \end{tabular}
 \bigskip
 
@@ -252,7 +258,10 @@ Concepts:
 \vfill
 \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
 {
-  \small{Handcrafted with care using Vim and \href{https://github.com/izcet/latex-resume}{\LaTeX{}} and absolutely zero regurgitative "GenAI" software.}
+  \small
+  Written with care using Vim and \href{https://github.com/izcet/latex-resume}{\LaTeX{}} and absolutely zero regurgitative ''GenAI'' software.
+  
+  Accessible readability rated TODO using \href{http://www.myndex.com/APCA/}{ACPA Contrast Calculator}.
 }
 \end{center}
 \end{minipage}
