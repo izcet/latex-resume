@@ -3,12 +3,13 @@
 % https://github.com/latex-ninja/simple-hipstercv
 
 \documentclass[lighthipster]{simplehipstercv}
-% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
-% withoutsidebar
 \usepackage[utf8]{inputenc}
 \usepackage[default]{raleway}
 \usepackage[margin=.5cm, a4paper]{geometry}
 \usepackage{setspace}
+
+% the magical squigglies are mysterious and load bearing
+\newcommand{\bpt}{~•~}
 
 %------------------------------------------------------------------ Variablen
 \newlength{\rightcolwidth}
@@ -38,38 +39,38 @@
 \setlength{\columnsep}{1.5cm}
 \columnratio{0.23}[0.75]
 \begin{paracol}{2}
-  
-\vspace*{-7em}
-\hbadness5000
-%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
 
-\paracolbackgroundoptions
-% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+  \vspace*{-7em}
+  \hbadness5000
+  %\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
 
-\footnotesize
-{\setasidefontcolour
-\flushright
-%\begin{center}
-%    \roundpic{logos/face.jpg}
-%\end{center}
+  \paracolbackgroundoptions
+  % 0.9,0.9,0.9 -- 0.8,0.8,0.8
 
-\flushleft
-\Huge{\textbf{ISAAC RHETT}}
-\small
+  \footnotesize
+  {\setasidefontcolour
+  \flushright
+  %\begin{center}
+  %    \roundpic{logos/face.jpg}
+  %\end{center}
+
+  \flushleft
+  \Huge{\textbf{ISAAC RHETT}}
+  \small
 
   Security Engineer
 
-\bigskip
+  \bigskip
 
-\bg{cvgreen}{white}{About me}\\[0.5em]
-A software developer with a nontraditional background, 
+  \bg{cvgreen}{white}{About me}\\[0.5em]
+  A software developer with a nontraditional background, 
 
-I am passionate about cybersecurity and education.
+  I am passionate about cybersecurity and education.
 
-\bigskip
+  \bigskip
 
-\bg{cvgreen}{white}{Skills} \\[0.5em]
-Languages:
+  \bg{cvgreen}{white}{Skills} \\[0.5em]
+  Languages:
   \texttt{
     \begin{itemize}
       \item Bash
@@ -78,8 +79,8 @@ Languages:
       \item HTML / CSS
       \item Java
       \item Javascript
-      % TODO: add to footer instead
-      %\item \href{https://github.com/izcet/latex-resume}{\LaTeX{}}
+        % TODO: add to footer instead
+        %\item \href{https://github.com/izcet/latex-resume}{\LaTeX{}}
       \item PHP
       \item Python
       \item Ruby
@@ -88,23 +89,23 @@ Languages:
     \end{itemize}
   }
 
-% TODO how do I wrangle tools and concepts? :thinking_face:
-%Tools:
-%  \texttt{
-%    \begin{itemize}
-%      \item Apt
-%      \item Firefox ESR
-%      \item Git
-%      \item Pacman
-%      \item Radare2
-%      \item Smali
-%      \item SSH
-%      \item Vim
-%    \end{itemize}
-%  }
-%
+  % TODO how do I wrangle tools and concepts? :thinking_face:
+  %Tools:
+  %  \texttt{
+  %    \begin{itemize}
+  %      \item Apt
+  %      \item Firefox ESR
+  %      \item Git
+  %      \item Pacman
+  %      \item Radare2
+  %      \item Smali
+  %      \item SSH
+  %      \item Vim
+  %    \end{itemize}
+  %  }
+  %
 
-Concepts:
+  Concepts:
   \texttt{
     \begin{itemize}
       \item Android
@@ -116,10 +117,10 @@ Concepts:
     \end{itemize}
   }
 
-\bigskip
+  \bigskip
 
 
-\bg{cvgreen}{white}{Soft Skills} \\[0.5em]
+  \bg{cvgreen}{white}{Soft Skills} \\[0.5em]
 
 \item Communication
 \item Critical Thinking
@@ -129,29 +130,28 @@ Concepts:
 \item Presentation and Speaking
 \item Problem Solving
 
-\bigskip
+  \bigskip
 
 
-\bg{cvgreen}{white}{Contact} \\[0.5em]
+  \bg{cvgreen}{white}{Contact} \\[0.5em]
 
-\infobubble{\faEnvelope}{cvgreen}{white}{irhett@pm.me}
-\infobubble{\faPhone}{cvgreen}{white}{Signal: \href{https://signal.me/\#eu/n6vUIaa2hD\_QyqnlLw0l8St7NPlS4kB91YU0XvO7ToLoG6uvamZExYdkxViihQ7g}{irhett.42}}
-\infobubble{\faLinkedin}{cvgreen}{white}{\href{https://www.linkedin.com/in/irhett/}{irhett}}
-\infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/izcet/}{izcet}}
-\infobubble{\faAt}{cvgreen}{white}{\href{https://matrix.to/\#/@irhett:matrix.org}{@irhett:matrix.org}}
+  \infobubble{\faEnvelope}{cvgreen}{white}{irhett@pm.me}
+  \infobubble{\faPhone}{cvgreen}{white}{Signal: \href{https://signal.me/\#eu/n6vUIaa2hD\_QyqnlLw0l8St7NPlS4kB91YU0XvO7ToLoG6uvamZExYdkxViihQ7g}{irhett.42}}
+  \infobubble{\faLinkedin}{cvgreen}{white}{\href{https://www.linkedin.com/in/irhett/}{irhett}}
+  \infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/izcet/}{izcet}}
+  \infobubble{\faAt}{cvgreen}{white}{\href{https://matrix.to/\#/@irhett:matrix.org}{@irhett:matrix.org}}
 
-\phantom{turn the page}
+  \phantom{turn the page}
 
-\phantom{turn the page}
-}
-%-----------------------------------------------------------
-\switchcolumn
-\small
-\vspace*{-8em}
+  \phantom{turn the page}
+  }
+  %-----------------------------------------------------------
+  \switchcolumn
+  \small
+  \vspace*{-8em}
 
-% TODO swap company and job
-\section*{Work Experience}
-\begin{tabular}{p{0.58\textwidth} c}
+  \section*{Work Experience}
+  \begin{tabular}{p{0.58\textwidth} c}
     \cveventtwo{Sabbatical ~•~ Recurse Center}{2024--2025}{NYC \color{cvred}}{
       \setstretch{0}
       \begin{itemize}
@@ -159,113 +159,120 @@ Concepts:
         \item bar
       \end{itemize}
     }{logos/recurse.png} \\
-    \cveventtwo{Security Engineer ~•~ Google}{2022--2024}{Mountain View \color{cvred}}{
-      I worked with cross functional teams to protect end-users from privacy risks and scaled abuse vectors on the Google Play Store.
-      I also identified threats in the android developer ecosystem both on and off Play, and wrote tooling to automate detection and removal of malicious apps and SDK supply chain threats.
+    \cveventtwo{Security Engineer ~•~ Google}{2022--2024}{Mountain View \color{cvred}}{\bpt
+    I worked with cross functional teams to protect end-users from privacy risks and scaled abuse vectors on the Google Play Store.
+
+
+    \bpt I also identified threats in the android developer ecosystem both on and off Play, and wrote tooling to automate detection and removal of malicious apps and SDK supply chain threats.
     }{logos/google.png} \\
     \cveventtwo{Security Intelligence Engineer ~•~ Lookout}{2018-2022}{Boston \color{cvred}}{
       I contributed to Lookout's core mobile app analysis pipeline which performs cross-platform static and dynamic analysis. The analysis pipeline is capable of ingesting, decomposing, analyizng, and applying plicy to 100s of millions of Android and iOS mobile applications. This data is then used to detect malware, and enforce enterprise data security policies.
-  }{logos/lookout2.png} \\
+
+      \bpt Won first place in the 2021 company-wide \href{https://www.securecodewarrior.com/}{Secure Code Warrior} competition.
+    }{logos/lookout2.png} \\
     \cveventtwo{Internship ~•~ OtoSense / Analog Devices}{2018}{Palo Alto \color{cvred}}{
       In this fact paced and dynamic work environment, I was responsible for creating software tools that directly impacted the core mission of the company.
       I developed in embedded C for data acquisition, and Python for data analysis and rendering.
-    }{logos/otosense.jpg}
-\end{tabular}
-%\bigskip
+    }{logos/otosense.jpg} \\
+    \cveventtwo{Instructor ~•~ Code For Fun}{2017--2018}{Fremont \color{cvred}}{
+      I've actively engaged more than 40 high school students using python to teach computer science and cybersecurity concepts.
+    }{logos/codeforfun.jpeg}
+  \end{tabular}
+  %\bigskip
 
-\section*{Education}
-\begin{tabular}{p{0.6\textwidth} c}
-  \cveventtwo{42 Silicon Valley}{2016--2018}{Fremont \color{cvred}}{A rigorous tuition-free project-based computer science program with a peer-to-peer, self paced curriculum.}{logos/42.jpg}
-\end{tabular}
-%\bigskip
+  \section*{Education}
+  \begin{tabular}{p{0.6\textwidth} c}
+    \cveventtwo{42 Silicon Valley}{2016--2018}{Fremont \color{cvred}}{A rigorous tuition-free project-based computer science program with a peer-to-peer, self paced curriculum.}{logos/42.jpg}
+  \end{tabular}
+  %\bigskip
 
-\section*{Projects}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+  \section*{Projects}
+  \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
     \href{https://github.com/izcet/signal-apk-updater}{DeGoogled Signal} & Secure bash automated acquisition and install of direct-download Signal APK. \\
     \href{https://github.com/sedson/sludge-game}{Sludge Game} & Game-jam collab using Vanilla JS and WebGL. Live demo on \href{https://sedson.itch.io/form-of-danger}{itch.io}.  \\
     \href{https://github.com/izcet/ft_ssl_des}{ft\_ssl DES} & Reimplemented OpenSSL commands in C with several block cipher modes. \\
-  \href{https://github.com/izcet/fractol}{Fractol} & A parallelized fractal renderer in C including side projects for color generation. 
-\end{tabular}
-%\bigskip
+    \href{https://github.com/izcet/fractol}{Fractol} & A parallelized fractal renderer in C including side projects for color generation. 
+  \end{tabular}
+  %\bigskip
 
-\section*{Leadership and Activities}
-\begin{tabular}{r| p{0.5\textwidth} c}
+  \section*{Leadership and Activities}
+  \begin{tabular}{r| p{0.5\textwidth} c}
     \cvevent{2016--2018}{Student}{42 Silicon Valley}{Fremont \color{cvred}}{\lorem\lorem}{logos/42.jpg}
-\end{tabular}
-\vspace{3em}
+  \end{tabular}
+  \vspace{3em}
 
 
-% TODO remove this section - don't got no degree
-%\begin{minipage}[t]{0.35\textwidth}
-%\section*{Degrees}
-%\begin{tabular}{r p{0.6\textwidth} c}
-%    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{logos/lookout1.png} \\
-%    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{logos/lookout1.png} \\
-%    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{logos/lookout1.png}
-%\end{tabular}
-%\end{minipage}\hfill
-%\begin{minipage}[t]{0.3\textwidth}
-%\section*{Programming}%
-%\begin{tabular}{r @{\hspace{0.5em}}l}
-%     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
-%     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen} \\
-%     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.5}{0.5em}{cvpurple} \\
-%     \bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.25}{0.5em}{cvpurple} \\
-%     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.1}{0.5em}{cvpurple} \\
-%\end{tabular}
-%\end{minipage}
+  % TODO remove this section - don't got no degree
+  %\begin{minipage}[t]{0.35\textwidth}
+  %\section*{Degrees}
+  %\begin{tabular}{r p{0.6\textwidth} c}
+  %    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{logos/lookout1.png} \\
+  %    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{logos/lookout1.png} \\
+  %    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{logos/lookout1.png}
+  %\end{tabular}
+  %\end{minipage}\hfill
+  %\begin{minipage}[t]{0.3\textwidth}
+  %\section*{Programming}%
+  %\begin{tabular}{r @{\hspace{0.5em}}l}
+  %     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
+  %     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen} \\
+  %     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.5}{0.5em}{cvpurple} \\
+  %     \bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.25}{0.5em}{cvpurple} \\
+  %     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.1}{0.5em}{cvpurple} \\
+  %\end{tabular}
+  %\end{minipage}
 
-%\section*{Curriculum}
-%\begin{tabular}{r| p{0.5\textwidth} c}
-%    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back. \lorem}{logos/lookout1.png} \\
-%    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga \color{cvred}}{This and that. The usual, aye?  \lorem}{logos/lookout1.png} \\
-%\end{tabular}
-%\vspace{3em}
+  %\section*{Curriculum}
+  %\begin{tabular}{r| p{0.5\textwidth} c}
+  %    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back. \lorem}{logos/lookout1.png} \\
+  %    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga \color{cvred}}{This and that. The usual, aye?  \lorem}{logos/lookout1.png} \\
+  %\end{tabular}
+  %\vspace{3em}
 
-%\begin{minipage}[t]{0.3\textwidth}
-\section*{Certificates}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+  %\begin{minipage}[t]{0.3\textwidth}
+  \section*{Certificates}
+  \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
     2017 & Cisco NDG Linux Essentials
-\end{tabular}
-\bigskip
+  \end{tabular}
+  \bigskip
 
-%\section*{Languages}
-%\begin{tabular}{l | ll}
-%\textbf{English} & C2 & {\phantom{x}\footnotesize mother tongue} \\
-%\textbf{French} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
-%\textbf{Spanish} & C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
-%\textbf{Italian} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny}
-%\end{tabular}
-%\bigskip
+  %\section*{Languages}
+  %\begin{tabular}{l | ll}
+  %\textbf{English} & C2 & {\phantom{x}\footnotesize mother tongue} \\
+  %\textbf{French} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+  %\textbf{Spanish} & C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
+  %\textbf{Italian} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny}
+  %\end{tabular}
+  %\bigskip
 
-%\end{minipage}\hfill
-%\begin{minipage}[t]{0.3\textwidth}
+  %\end{minipage}\hfill
+  %\begin{minipage}[t]{0.3\textwidth}
 
-%\section*{Talks}
-%\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
-%    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
-%\end{tabular}
-%\end{minipage}
+  %\section*{Talks}
+  %\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+  %    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
+  %\end{tabular}
+  %\end{minipage}
 
-\vfill{} % Whitespace before final footer
-\vspace{4em}
-%----------------------------------------------------------------------------------------
-%	FINAL FOOTER
-%----------------------------------------------------------------------------------------
-\setlength{\parindent}{0pt}
-\begin{minipage}[t]{\rightcolwidth}
-\vfill
-\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!90}
-{
-  \small
-  Written with care using Vim and \href{https://github.com/izcet/latex-resume}{\LaTeX{}} and absolutely zero regurgitative ''GenAI'' software.
-  
-  Accessible readability checked with \href{http://www.myndex.com/APCA/}{APCA Contrast Calculator}.
-}
-\end{center}
-\end{minipage}
+  \vfill{} % Whitespace before final footer
+  \vspace{4em}
+  %----------------------------------------------------------------------------------------
+  %	FINAL FOOTER
+  %----------------------------------------------------------------------------------------
+  \setlength{\parindent}{0pt}
+  \begin{minipage}[t]{\rightcolwidth}
+    \vfill
+    \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!90}
+      {
+        \small
+        Written with care using Vim and \href{https://github.com/izcet/latex-resume}{\LaTeX{}} and absolutely zero regurgitative ''GenAI'' software.
 
-\vspace{48em}
+        Accessible readability checked with \href{http://www.myndex.com/APCA/}{APCA Contrast Calculator}.
+        }
+    \end{center}
+  \end{minipage}
+
+  \vspace{48em}
 \end{paracol}
 
 \end{document}
