@@ -7,7 +7,7 @@
 % withoutsidebar
 \usepackage[utf8]{inputenc}
 \usepackage[default]{raleway}
-\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage[margin=.5cm, a4paper]{geometry}
 
 %------------------------------------------------------------------ Variablen
 \newlength{\rightcolwidth}
@@ -31,7 +31,8 @@
 \vspace{4em}
 
 
-\setlength{\columnseprule}{1.5pt}
+% I had these here for debugging load-bearing whitespace, will remove in future commit
+%\setlength{\columnseprule}{1.5pt}
 %\colseprulecolor{red}
 \setlength{\columnsep}{1.5cm}
 \columnratio{0.23}[0.75]
@@ -52,8 +53,12 @@
 %\end{center}
 
 \flushleft
-ISAAC RHETT
-Security Engineer
+\Huge{\textbf{ISAAC RHETT}}
+\small
+
+  Security Engineer
+
+\bigskip
 
 \bg{cvgreen}{white}{About me}\\[0.5em]
 A software developer with a nontraditional background, 
@@ -72,7 +77,8 @@ Languages:
       \item HTML / CSS
       \item Java
       \item Javascript
-      \item \href{https://github.com/izcet/latex-resume}{\LaTeX{}}
+      % TODO: add to footer instead
+      %\item \href{https://github.com/izcet/latex-resume}{\LaTeX{}}
       \item PHP
       \item Python
       \item Ruby
@@ -81,14 +87,30 @@ Languages:
     \end{itemize}
   }
 
+% TODO how do I wrangle tools and concepts? :thinking_face:
+%Tools:
+%  \texttt{
+%    \begin{itemize}
+%      \item Apt
+%      \item Firefox ESR
+%      \item Git
+%      \item Pacman
+%      \item Radare2
+%      \item Smali
+%      \item SSH
+%      \item Vim
+%    \end{itemize}
+%  }
+%
 
 Concepts:
   \texttt{
     \begin{itemize}
       \item Android
-      \item Linux
-      \item Reverse Engineering
       \item Cryptography / PKI
+      \item Linux / Unix
+      \item Reverse Engineering
+      \item Test-Driven Development
     \end{itemize}
   }
 
@@ -98,10 +120,12 @@ Concepts:
 \bg{cvgreen}{white}{Soft Skills} \\[0.5em]
 
 \item Communication
-\item Problem Solving
 \item Critical Thinking
-\item Presentation and Speaking
+\item Detail-Oriented
 \item Interpersonal Collaboration
+\item Organization
+\item Presentation and Speaking
+\item Problem Solving
 
 \vspace{4em}
 
@@ -118,98 +142,113 @@ Concepts:
 \switchcolumn
 \small
 \vspace*{-8em}
-\section*{Work Experience}
 
+% TODO swap company and job
+\section*{Work Experience}
 \begin{tabular}{r| p{0.5\textwidth} c}
     \cvevent{2024--2025}{Sabbatical}{Recurse Center}{NYC \color{cvred}}{\lorem\lorem}{pdf-image/recurse.png} \\
-    \cvevent{2022--2024}{Security Engineer}{Google}{Mountain View \color{cvred}}{\lorem\lorem}{pdf-image/google.png} \\
-    \cvevent{2018-2022}{Security Intelligence Engineer}{Lookout}{Boston \color{cvred}}{\lorem\lorem}{pdf-image/lookout2.png} \\
-    \cvevent{2018}{Internship}{OtoSense / Analog Devices}{Palo Alto \color{cvred}}{\lorem\lorem}{pdf-image/otosense.jpg}
+    \cvevent{2022--2024}{Security Engineer}{Google}{Mountain View \color{cvred}}{
+      I worked with cross functional teams to protect end-users from privacy risks and scaled abuse vectors on the Google Play Store.
+      I also identified threats in the android developer ecosystem both on and off Play, and wrote tooling to automate detection and removal of malicious apps and SDK supply chain threats.
+    }{pdf-image/google.png} \\
+    \cvevent{2018-2022}{Security Intelligence Engineer}{Lookout}{Boston \color{cvred}}{
+      I contributed to Lookout's core mobile app analysis pipeline which performs cross-platform static and dynamic analysis. The analysis pipeline is capable of ingesting, decomposing, analyizng, and applying plicy to 100s of millions of Android and iOS mobile applications. This data is then used to detect malware, and enforce enterprise data security policies.
+  }{pdf-image/lookout2.png} \\
+    \cvevent{2018}{Internship}{OtoSense / Analog Devices}{Palo Alto \color{cvred}}{
+      In this fact paced and dynamic work environment, I was responsible for creating software tools that directly impacted the core mission of the company.
+      I developed in embedded C for data acquisition, and Python for data analysis and rendering.
+    }{pdf-image/otosense.jpg}
 \end{tabular}
-\vspace{1em}
+\bigskip
 
 \section*{Education}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2016--2018}{42 Silicon Valley}{Student}{Fremont \color{cvred}}{A rigorous tuition-free project-based computer science program with a peer-to-peer, self paced curriculum.}{pdf-image/42.jpg}
+\end{tabular}
+\bigskip
 
+\section*{Projects}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    Fractol & A parallelized fractal renderer including side projects for color generation. \\
+    ft\_ssl DES & Reimplemented functionality of OpenSSL with several block cipher modes.
+\end{tabular}
+\bigskip
+
+\section*{Leadership and Activities}
 \begin{tabular}{r| p{0.5\textwidth} c}
     \cvevent{2016--2018}{Student}{42 Silicon Valley}{Fremont \color{cvred}}{\lorem\lorem}{pdf-image/42.jpg}
 \end{tabular}
 \vspace{3em}
 
-\begin{minipage}[t]{0.35\textwidth}
-\section*{Degrees}
-\begin{tabular}{r p{0.6\textwidth} c}
-    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{pdf-image/lookout1.png} \\
-    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{pdf-image/lookout1.png} \\
-    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{pdf-image/lookout1.png}
-\end{tabular}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.3\textwidth}
-\section*{Programming}%
-\begin{tabular}{r @{\hspace{0.5em}}l}
-     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
-     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen} \\
-     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.5}{0.5em}{cvpurple} \\
-     \bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.25}{0.5em}{cvpurple} \\
-     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.1}{0.5em}{cvpurple} \\
-\end{tabular}
-\end{minipage}
+
+% TODO remove this section - don't got no degree
+%\begin{minipage}[t]{0.35\textwidth}
+%\section*{Degrees}
+%\begin{tabular}{r p{0.6\textwidth} c}
+%    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{pdf-image/lookout1.png} \\
+%    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{pdf-image/lookout1.png} \\
+%    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{pdf-image/lookout1.png}
+%\end{tabular}
+%\end{minipage}\hfill
+%\begin{minipage}[t]{0.3\textwidth}
+%\section*{Programming}%
+%\begin{tabular}{r @{\hspace{0.5em}}l}
+%     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
+%     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen} \\
+%     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.5}{0.5em}{cvpurple} \\
+%     \bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.25}{0.5em}{cvpurple} \\
+%     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.1}{0.5em}{cvpurple} \\
+%\end{tabular}
+%\end{minipage}
 
 %\section*{Curriculum}
 %\begin{tabular}{r| p{0.5\textwidth} c}
-%    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back. \lorem}{pdf-image/disney.png} \\
+%    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back. \lorem}{pdf-image/lookout1.png} \\
 %    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga \color{cvred}}{This and that. The usual, aye?  \lorem}{pdf-image/lookout1.png} \\
 %\end{tabular}
-\vspace{3em}
+%\vspace{3em}
 
-\begin{minipage}[t]{0.3\textwidth}
-\section*{Certificates \& Grants}
+%\begin{minipage}[t]{0.3\textwidth}
+\section*{Certificates}
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
-    1708 & Captain's Certificates \\
-    1710 & Travel grant \\
-    1715--1716 & Grant from the Pirate's Company
+    2017 & Cisco NDG Linux Essentials
 \end{tabular}
 \bigskip
 
-\section*{Languages}
-\begin{tabular}{l | ll}
-\textbf{English} & C2 & {\phantom{x}\footnotesize mother tongue} \\
-\textbf{French} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
-\textbf{Spanish} & C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
-\textbf{Italian} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny}
-\end{tabular}
-\bigskip
+%\section*{Languages}
+%\begin{tabular}{l | ll}
+%\textbf{English} & C2 & {\phantom{x}\footnotesize mother tongue} \\
+%\textbf{French} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+%\textbf{Spanish} & C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
+%\textbf{Italian} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny}
+%\end{tabular}
+%\bigskip
 
-\end{minipage}\hfill
-\begin{minipage}[t]{0.3\textwidth}
-\section*{Publications}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
-    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
-    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).
-\end{tabular}
-\bigskip
+%\end{minipage}\hfill
+%\begin{minipage}[t]{0.3\textwidth}
 
-\section*{Talks}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
-    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
-\end{tabular}
-\end{minipage}
+%\section*{Talks}
+%\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+%    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
+%\end{tabular}
+%\end{minipage}
 
 \vfill{} % Whitespace before final footer
-\vspace{12em}
+\vspace{4em}
 %----------------------------------------------------------------------------------------
 %	FINAL FOOTER
 %----------------------------------------------------------------------------------------
-%\setlength{\parindent}{0pt}
-%\begin{minipage}[t]{\rightcolwidth}
-%\vfill
-%\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
-%{
-%  \small{asdf}\newline\small{asdf}
-%\small Jack Sparrow \icon{\faEnvelopeO}{cvgreen}{} The Black Pearl \icon{\faMapMarker}{cvgreen}{} Tortuga \icon{\faPhone}{cvgreen}{} 0099/333 5647380 \newline\icon{\faAt}{cvgreen}{} \protect\url{jack@sparrow.com}
-%}
-%\end{center}
-%\end{minipage}
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\vfill
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{
+  \small{Made with care using \LaTeX{} and absolutely zero regurgitative "GenAI" software.}
+}
+\end{center}
+\end{minipage}
 
+\vspace{48em}
 \end{paracol}
 
 \end{document}
