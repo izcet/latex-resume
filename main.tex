@@ -8,6 +8,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[default]{raleway}
 \usepackage[margin=.5cm, a4paper]{geometry}
+\usepackage{setspace}
 
 %------------------------------------------------------------------ Variablen
 \newlength{\rightcolwidth}
@@ -146,15 +147,21 @@ Concepts:
 % TODO swap company and job
 \section*{Work Experience}
 \begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2024--2025}{Sabbatical}{Recurse Center}{NYC \color{cvred}}{\lorem\lorem}{pdf-image/recurse.png} \\
-    \cvevent{2022--2024}{Security Engineer}{Google}{Mountain View \color{cvred}}{
+    \cvevent{2024--2025}{Recurse Center}{Sabbatical}{NYC \color{cvred}}{
+      \setstretch{0}
+      \begin{itemize}
+        \item foo
+        \item bar
+      \end{itemize}
+    }{pdf-image/recurse.png} \\
+    \cvevent{2022--2024}{Google}{Security Engineer}{Mountain View \color{cvred}}{
       I worked with cross functional teams to protect end-users from privacy risks and scaled abuse vectors on the Google Play Store.
       I also identified threats in the android developer ecosystem both on and off Play, and wrote tooling to automate detection and removal of malicious apps and SDK supply chain threats.
     }{pdf-image/google.png} \\
-    \cvevent{2018-2022}{Security Intelligence Engineer}{Lookout}{Boston \color{cvred}}{
+    \cvevent{2018-2022}{Lookout}{Security Intelligence Engineer}{Boston \color{cvred}}{
       I contributed to Lookout's core mobile app analysis pipeline which performs cross-platform static and dynamic analysis. The analysis pipeline is capable of ingesting, decomposing, analyizng, and applying plicy to 100s of millions of Android and iOS mobile applications. This data is then used to detect malware, and enforce enterprise data security policies.
   }{pdf-image/lookout2.png} \\
-    \cvevent{2018}{Internship}{OtoSense / Analog Devices}{Palo Alto \color{cvred}}{
+    \cvevent{2018}{OtoSense / Analog Devices}{Internship}{Palo Alto \color{cvred}}{
       In this fact paced and dynamic work environment, I was responsible for creating software tools that directly impacted the core mission of the company.
       I developed in embedded C for data acquisition, and Python for data analysis and rendering.
     }{pdf-image/otosense.jpg}
@@ -169,8 +176,10 @@ Concepts:
 
 \section*{Projects}
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
-    Fractol & A parallelized fractal renderer including side projects for color generation. \\
-    ft\_ssl DES & Reimplemented functionality of OpenSSL with several block cipher modes.
+  \href{https://github.com/izcet/fractol}{Fractol} & A parallelized fractal renderer including side projects for color generation. \\
+    \href{https://github.com/izcet/ft_ssl_des}{ft\_ssl DES} & Reimplemented functionality of OpenSSL with several block cipher modes. \\
+    \href{https://github.com/izcet/signal-apk-updater}{DeGoogled Signal} & Secure automation of acquisition and install of direct-download Signal APK. \\
+    \href{https://github.com/sedson/sludge-game}{Sludge Game} & Game-jam collab using Vanilla JS and WebGL. \href{https://sedson.itch.io/form-of-danger}{Live demo}. 
 \end{tabular}
 \bigskip
 
@@ -243,7 +252,7 @@ Concepts:
 \vfill
 \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
 {
-  \small{Made with care using \LaTeX{} and absolutely zero regurgitative "GenAI" software.}
+  \small{Handcrafted with care using Vim and \href{https://github.com/izcet/latex-resume}{\LaTeX{}} and absolutely zero regurgitative "GenAI" software.}
 }
 \end{center}
 \end{minipage}
