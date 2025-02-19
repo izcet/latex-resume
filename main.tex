@@ -1,6 +1,6 @@
-% a mashup of hipstercv, friggeri and twenty cv
-% https://www.latextemplates.com/template/twenty-seconds-resumecv
-% https://www.latextemplates.com/template/friggeri-resume-cv
+% author: Isaac Rhett
+% originally forked from latex-ninja
+% https://github.com/latex-ninja/simple-hipstercv
 
 \documentclass[lighthipster]{simplehipstercv}
 % available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
@@ -9,9 +9,7 @@
 \usepackage[default]{raleway}
 \usepackage[margin=1cm, a4paper]{geometry}
 
-
 %------------------------------------------------------------------ Variablen
-
 \newlength{\rightcolwidth}
 \newlength{\leftcolwidth}
 \setlength{\leftcolwidth}{0.23\textwidth}
@@ -27,16 +25,12 @@
 
 
 \thispagestyle{empty}
+
 %-------------------------------------------------------------
-
 \section*{Start}
-
 \simpleheader{headercolour}{Jack}{Sparrow}{Captain}{white}
 
-
-
 %------------------------------------------------
-
 % this has to be here so the paracols starts..
 \subsection*{}
 \vspace{4em}
@@ -48,15 +42,13 @@
 %\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
 
 \paracolbackgroundoptions
-
 % 0.9,0.9,0.9 -- 0.8,0.8,0.8
-
 
 \footnotesize
 {\setasidefontcolour
 \flushright
 \begin{center}
-    \roundpic{jack.jpg}
+    \roundpic{pdf-image/jack.jpg}
 \end{center}
 
 \bg{cvgreen}{white}{About me}\\[0.5em]
@@ -79,8 +71,6 @@ nationality: English
 Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
 
 \bigskip
-
-
 
 \bigskip
 
@@ -115,17 +105,17 @@ Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
 \section*{Short Resumé}
 
 \begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back.\lorem\lorem\lorem}{disney.png} \\
-    \cvevent{2016--2017}{Captain of the Black Pearl}{Lead}{Tortuga \color{cvred}}{Found a secret treasure, lost the ship. \lorem\lorem}{medal.jpeg}
+    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back.\lorem\lorem\lorem}{pdf-image/disney.png} \\
+    \cvevent{2016--2017}{Captain of the Black Pearl}{Lead}{Tortuga \color{cvred}}{Found a secret treasure, lost the ship. \lorem\lorem}{pdf-image/medal.jpeg}
 \end{tabular}
 \vspace{3em}
 
 \begin{minipage}[t]{0.35\textwidth}
 \section*{Degrees}
 \begin{tabular}{r p{0.6\textwidth} c}
-    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{disney.png} \\
-    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{medal.jpeg} \\
-    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{medal.jpeg}
+    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{pdf-image/disney.png} \\
+    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{pdf-image/medal.jpeg} \\
+    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{pdf-image/medal.jpeg}
 \end{tabular}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.3\textwidth}
@@ -141,8 +131,8 @@ Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
 
 \section*{Curriculum}
 \begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back. \lorem}{disney.png} \\
-    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga \color{cvred}}{This and that. The usual, aye?  \lorem}{medal.jpeg} \\
+    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back. \lorem}{pdf-image/disney.png} \\
+    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga \color{cvred}}{This and that. The usual, aye?  \lorem}{pdf-image/medal.jpeg} \\
 \end{tabular}
 \vspace{3em}
 
@@ -178,11 +168,6 @@ Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
     Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
 \end{tabular}
 \end{minipage}
-
-
-
-
-
 
 \vfill{} % Whitespace before final footer
 

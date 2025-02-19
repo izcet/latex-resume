@@ -1,4 +1,4 @@
-# simple-hipstercv
+# imple-hipstercv
 A more simple, lightweight and a little bit different version of the Hipster CV
 
 
@@ -8,7 +8,7 @@ These images are in the CV just for demonstration.
 Please replace them with your own photos and logos if you use this template!
 
 # Preview (withoutsidebar option)
-![Timeline CV](https://github.com/latex-ninja/simple-hipstercv/blob/master/withoutsidebar.png)
+![Timeline CV](https://github.com/izcet/latex-resume/blob/master/assets/withoutsidebar.png)
 
 <table width="100%" margin-left="auto" margin-right="auto">
 	<tr>
@@ -16,7 +16,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/latex-ninja/simple-hipstercv/blob/master/hipster-styles.png" 
+			<img src="https://github.com/izcet/latex-resume/blob/master/assets/hipster-styles.png" 
 				alt="Simple HipsterCV Template Classic"
 				height="300"/>
 		</td>
@@ -29,7 +29,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/latex-ninja/simple-hipstercv/blob/master/pastels.png" 
+			<img src="https://github.com/izcet/latex-resume/blob/master/assets/pastels.png" 
 				alt="Simple HipsterCV Template Pastels"
 				height="300" />
 		</td>
@@ -42,7 +42,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/latex-ninja/simple-hipstercv/blob/master/darks.png" 
+			<img src="https://github.com/izcet/latex-resume/blob/master/assets/darks.png" 
 				alt="Simple HipsterCV Template Dark" 
 				height="300"/>
 		</td>
@@ -55,7 +55,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/latex-ninja/simple-hipstercv/blob/master/comparison-hipster-simple.png" 
+			<img src="https://github.com/izcet/latex-resume/blob/master/assets/comparison-hipster-simple.png" 
 				alt="Comparison Simple Hipster vs Hipster CV"
 				height="300"/>
 		</td>
