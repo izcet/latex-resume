@@ -8,7 +8,7 @@ These images are in the CV just for demonstration.
 Please replace them with your own photos and logos if you use this template!
 
 # Preview (withoutsidebar option)
-![Timeline CV](https://github.com/izcet/latex-resume/blob/master/assets/withoutsidebar.png)
+![Timeline CV](https://github.com/izcet/latex-resume/blob/main/assets/withoutsidebar.png)
 
 <table width="100%" margin-left="auto" margin-right="auto">
 	<tr>
@@ -16,7 +16,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/izcet/latex-resume/blob/master/assets/hipster-styles.png" 
+			<img src="https://github.com/izcet/latex-resume/blob/main/assets/hipster-styles.png" 
 				alt="Simple HipsterCV Template Classic"
 				height="300"/>
 		</td>
@@ -29,7 +29,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/izcet/latex-resume/blob/master/assets/pastels.png" 
+			<img src="https://github.com/izcet/latex-resume/blob/main/assets/pastels.png" 
 				alt="Simple HipsterCV Template Pastels"
 				height="300" />
 		</td>
@@ -42,7 +42,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/izcet/latex-resume/blob/master/assets/darks.png" 
+			<img src="https://github.com/izcet/latex-resume/blob/main/assets/darks.png" 
 				alt="Simple HipsterCV Template Dark" 
 				height="300"/>
 		</td>
@@ -55,7 +55,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/izcet/latex-resume/blob/master/assets/comparison-hipster-simple.png" 
+			<img src="https://github.com/izcet/latex-resume/blob/main/assets/comparison-hipster-simple.png" 
 				alt="Comparison Simple Hipster vs Hipster CV"
 				height="300"/>
 		</td>
@@ -67,13 +67,13 @@ Please replace them with your own photos and logos if you use this template!
 
 # See also: Modern Simple CV 
 
-![Modern Simple CV](https://github.com/latex-ninja/hipster-cv/blob/master/previews/modern-simple-cv.png)
+![Modern Simple CV](https://github.com/latex-ninja/hipster-cv/blob/main/previews/modern-simple-cv.png)
 
 [Get it here.](https://github.com/latex-ninja/modern-simple-cv)
 
 # See also: Two Row Academic CV
 
-![Two Row Academic](https://github.com/latex-ninja/two-row-academic-cv/blob/master/two-row-academic-cv.png)
+![Two Row Academic](https://github.com/latex-ninja/two-row-academic-cv/blob/main/two-row-academic-cv.png)
 
 [Get it here.](https://github.com/latex-ninja/two-row-academic-cv)
 
@@ -85,7 +85,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/latex-ninja/hipster-cv/blob/master/previews/academic-cvs.png" 
+			<img src="https://github.com/latex-ninja/hipster-cv/blob/main/previews/academic-cvs.png" 
 				alt="Simple Academic CV"
 				height="300"/>
 		</td>
@@ -98,7 +98,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/latex-ninja/simple-academic-resume/blob/master/simple-acad-cv.png" 
+			<img src="https://github.com/latex-ninja/simple-academic-resume/blob/main/simple-acad-cv.png" 
 				alt="Simple Academic CV"
 				height="300"/>
 		</td>
@@ -115,7 +115,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/latex-ninja/hipster-cv/blob/master/previews/classic-hipstercvs.png" 
+			<img src="https://github.com/latex-ninja/hipster-cv/blob/main/previews/classic-hipstercvs.png" 
 				alt="HipsterCV Template Classic"
 				height="300"/>
 		</td>
@@ -128,7 +128,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/latex-ninja/hipster-cv/blob/master/previews/pastels-hipstercv.png" 
+			<img src="https://github.com/latex-ninja/hipster-cv/blob/main/previews/pastels-hipstercv.png" 
 				alt="HipsterCV Template Pastels"
 				height="300" />
 		</td>
@@ -141,7 +141,7 @@ Please replace them with your own photos and logos if you use this template!
 	</tr>
 	<tr>
 		<td>
-			<img src="https://github.com/latex-ninja/hipster-cv/blob/master/previews/dark-hipster-cvs.png" 
+			<img src="https://github.com/latex-ninja/hipster-cv/blob/main/previews/dark-hipster-cvs.png" 
 				alt="HipsterCV Template Dark" 
 				height="300"/>
 		</td>
