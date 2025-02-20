@@ -79,8 +79,6 @@
       \item HTML / CSS
       \item Java
       \item Javascript
-        % TODO: add to footer instead
-        %\item \href{https://github.com/izcet/latex-resume}{\LaTeX{}}
       \item PHP
       \item Python
       \item Ruby
@@ -153,38 +151,68 @@
   \section*{Work Experience}
   \begin{tabular}{p{0.58\textwidth} c}
     \cveventtwo{Sabbatical ~•~ Recurse Center}{2024--2025}{NYC \color{cvred}}{
-      \setstretch{0}
-      \begin{itemize}
-        \item foo
-        \item bar
-      \end{itemize}
+      %\bpt Led a git trunk-based oneshot strategy in a game jam. On our team of \textbf{5 contributers}, we had more than \textbf{100 commits over 3 days}, with \textbf{\href{https://github.com/sedson/sludge-game/commits/main/}{zero merge noise}}.
+      \bpt Led a git trunk-based oneshot strategy in a game jam. On our team of 5 contributers, we had more than 100 commits over 3 days, with \href{https://github.com/sedson/sludge-game/commits/main/}{zero merge noise}.
+
+      \bpt Self-taught the internals of the Firefox web browser. Built tools, tailored task-oriented profiles, and utilized enterprise policies to harden the browser's privacy features.
+
+      \bpt Wrote an \href{https://github.com/izcet/--.bf/blob/main/--.bf}{esoteric program} in a minimal instruction set language.
+
+      % \bpt Won the Recurse Center's Halloween costume contest as The Installation Wizard. Burned more than a terabyte of data to thumbdrives as bootable linux ISOs, with the project files, security tools, and my contact information as a discoverable easter egg.
+      % \bpt Self-taught Firejail, the app sandboxing
+
+      % I think these look bad as the only technical points to have for (what appears to be) a year of sabbatical.
+      % Should I leave them out, move the git brag to the Projects/Sludge Game text?
     }{logos/recurse.png} \\
-    \cveventtwo{Security Engineer ~•~ Google}{2022--2024}{Mountain View \color{cvred}}{\bpt
-    I worked with cross functional teams to protect end-users from privacy risks and scaled abuse vectors on the Google Play Store.
+    \cveventtwo{Security Engineer, Android Security Operations ~•~ Google}{2022--2024}{Mountain View \color{cvred}}{
+      \bpt Led malware/policy investigations for apps and SDKs on the Google Play Store, involving reverse engineering,
+      unpacking, deobfuscation, and creating automated detection.
+      
+      \bpt Increased code coverage of sensitive API abuse through integrating static analysis, dynamic analysis, and internal tooling. The increased coverage immediately detected previously-unknown malicious SDks, which I triaged, investigated, and removed from Play. 
 
+      \bpt Identified privacy risks and data collection behaviors on the Google Play Store.
 
-    \bpt I also identified threats in the android developer ecosystem both on and off Play, and wrote tooling to automate detection and removal of malicious apps and SDK supply chain threats.
+      \bpt Provided technical expertise to management, legal, and cross-functional teams during sensitive escalations.
+      %
+      %\bpt Maintained a dashboard of ongoing detections, investigations, coverage, and enforcement of apps and SDKs, which provided a single source of truth artifact for cross-functional organization.
     }{logos/google.png} \\
     \cveventtwo{Security Intelligence Engineer ~•~ Lookout}{2018-2022}{Boston \color{cvred}}{
-      I contributed to Lookout's core mobile app analysis pipeline which performs cross-platform static and dynamic analysis. The analysis pipeline is capable of ingesting, decomposing, analyizng, and applying plicy to 100s of millions of Android and iOS mobile applications. This data is then used to detect malware, and enforce enterprise data security policies.
+      \bpt Maintained a realtime static analysis pipeline that analyzed hundreds of millions of mobile apps across iOS and Android, and automated threat detection.
 
-      \bpt Won first place in the 2021 company-wide \href{https://www.securecodewarrior.com/}{Secure Code Warrior} competition.
+      \bpt Completely owned and maintained the service architecture, from software development, code review, automated testing, build verification, staging and production checks, to metrics reporting, post-deployment monitoring, and on-call incident response.
+
+      \bpt Added IAM security policies and network access rules across the fleet of instances. 
+
+      \bpt Rotated signing keys used by the security OTA update infrastructure on a regular cadence.
+
+      \bpt Wrote tests to prevent data loss by adding DB schema backward compatibility checks.
+
+      \bpt Created a tool for surfacing insecure coding practices, such as hardcoded API credentials, in apps analyzed by the security platform.
+
+      \bpt Reverse engineered malicious apps as necessary to improve the analysis engine.
+
+      \bpt Won first place in the 2021 company-wide \href{https://www.securecodewarrior.com/}{Secure Code Warrior} challenge competition.
     }{logos/lookout2.png} \\
     \cveventtwo{Internship ~•~ OtoSense / Analog Devices}{2018}{Palo Alto \color{cvred}}{
+      \bpt Created an embedded visualizer 
+      
+      \bpt Worked with tight deadlines on customer-facing
+
+      \bpt Python
+      % you can tell where my brain juice ran empty at 3am
+
       In this fact paced and dynamic work environment, I was responsible for creating software tools that directly impacted the core mission of the company.
       I developed in embedded C for data acquisition, and Python for data analysis and rendering.
     }{logos/otosense.jpg} \\
     \cveventtwo{Instructor ~•~ Code For Fun}{2017--2018}{Fremont \color{cvred}}{
-      I've actively engaged more than 40 high school students using python to teach computer science and cybersecurity concepts.
+      \bpt I've actively engaged more than 40 high school students using python to teach computer science and cybersecurity concepts.
     }{logos/codeforfun.jpeg}
   \end{tabular}
-  %\bigskip
 
   \section*{Education}
   \begin{tabular}{p{0.6\textwidth} c}
     \cveventtwo{42 Silicon Valley}{2016--2018}{Fremont \color{cvred}}{A rigorous tuition-free project-based computer science program with a peer-to-peer, self paced curriculum.}{logos/42.jpg}
   \end{tabular}
-  %\bigskip
 
   \section*{Projects}
   \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
@@ -192,8 +220,8 @@
     \href{https://github.com/sedson/sludge-game}{Sludge Game} & Game-jam collab using Vanilla JS and WebGL. Live demo on \href{https://sedson.itch.io/form-of-danger}{itch.io}.  \\
     \href{https://github.com/izcet/ft_ssl_des}{ft\_ssl DES} & Reimplemented OpenSSL commands in C with several block cipher modes. \\
     \href{https://github.com/izcet/fractol}{Fractol} & A parallelized fractal renderer in C including side projects for color generation. 
+    % installation wizard?
   \end{tabular}
-  %\bigskip
 
   \section*{Leadership and Activities}
   \begin{tabular}{r| p{0.5\textwidth} c}
@@ -202,34 +230,6 @@
   \vspace{3em}
 
 
-  % TODO remove this section - don't got no degree
-  %\begin{minipage}[t]{0.35\textwidth}
-  %\section*{Degrees}
-  %\begin{tabular}{r p{0.6\textwidth} c}
-  %    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{logos/lookout1.png} \\
-  %    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{logos/lookout1.png} \\
-  %    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{logos/lookout1.png}
-  %\end{tabular}
-  %\end{minipage}\hfill
-  %\begin{minipage}[t]{0.3\textwidth}
-  %\section*{Programming}%
-  %\begin{tabular}{r @{\hspace{0.5em}}l}
-  %     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
-  %     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen} \\
-  %     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.5}{0.5em}{cvpurple} \\
-  %     \bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.25}{0.5em}{cvpurple} \\
-  %     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.1}{0.5em}{cvpurple} \\
-  %\end{tabular}
-  %\end{minipage}
-
-  %\section*{Curriculum}
-  %\begin{tabular}{r| p{0.5\textwidth} c}
-  %    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back. \lorem}{logos/lookout1.png} \\
-  %    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga \color{cvred}}{This and that. The usual, aye?  \lorem}{logos/lookout1.png} \\
-  %\end{tabular}
-  %\vspace{3em}
-
-  %\begin{minipage}[t]{0.3\textwidth}
   \section*{Certificates}
   \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
     2017 & Cisco NDG Linux Essentials
@@ -255,24 +255,21 @@
   %\end{minipage}
 
   \vfill{} % Whitespace before final footer
-  \vspace{4em}
+  \vspace{6em}
   %----------------------------------------------------------------------------------------
   %	FINAL FOOTER
   %----------------------------------------------------------------------------------------
-  \setlength{\parindent}{0pt}
-  \begin{minipage}[t]{\rightcolwidth}
-    \vfill
-    \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!90}
-      {
-        \small
-        Written with care using Vim and \href{https://github.com/izcet/latex-resume}{\LaTeX{}} and absolutely zero regurgitative ''GenAI'' software.
+  \vfill
+  \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!90}
+    {
+      \small
+      Written with care using Vim and \href{https://github.com/izcet/latex-resume}{\LaTeX{}} and absolutely zero regurgitative ''GenAI'' software.
 
-        Accessible readability checked with \href{http://www.myndex.com/APCA/}{APCA Contrast Calculator}.
-        }
-    \end{center}
-  \end{minipage}
+      Accessible readability checked with \href{http://www.myndex.com/APCA/}{APCA Contrast Calculator}.
+    }
+  \end{center}
 
-  \vspace{48em}
+  \vspace{2em}
 \end{paracol}
 
 \end{document}
