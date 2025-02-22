@@ -7,6 +7,7 @@
 \usepackage[default]{raleway}
 \usepackage[margin=.5cm, a4paper]{geometry}
 \usepackage{setspace}
+\usepackage{enumitem} % CR: Added so we can set things like leftmargin and itemsep easily
 
 % the magical squigglies are mysterious and load bearing
 \newcommand{\bpt}{~•~}
@@ -69,8 +70,23 @@
 
   \bigskip
 
+  \bg{cvgreen}{white}{Contact} \\[0.5em]
+
+  \infobubble{\faEnvelope}{cvgreen}{white}{irhett@pm.me}
+  
+  \infobubble{\faPhone}{cvgreen}{white}{Signal: \href{https://signal.me/\#eu/n6vUIaa2hD\_QyqnlLw0l8St7NPlS4kB91YU0XvO7ToLoG6uvamZExYdkxViihQ7g}{irhett.42}}
+  
+  \infobubble{\faLinkedin}{cvgreen}{white}{\href{https://www.linkedin.com/in/irhett/}{irhett}}
+  
+  \infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/izcet/}{izcet}}
+  
+  \infobubble{\faAt}{cvgreen}{white}{\href{https://matrix.to/\#/@irhett:matrix.org}{@irhett:matrix.org}}
+
+  \bigskip
+  
   \bg{cvgreen}{white}{Skills} \\[0.5em]
-  Languages:
+  
+  \textbf{Languages:}
   \texttt{
     \begin{itemize}
       \item Bash
@@ -104,7 +120,7 @@
   %  }
   %
 
-  Concepts:
+  \textbf{Concepts:}
   \texttt{
     \begin{itemize}
       \item Android
@@ -116,32 +132,32 @@
     \end{itemize}
   }
 
+  \pagebreak
+  
+  % CR: Repeat name and title to make this side-bar earn the right to exist :)
+  \Huge{\textbf{ISAAC RHETT}}
+  \small
+  
+  Security Engineer
+  
   \bigskip
-
-
+  
+  % CR: Soft skills seemed like a good candidate to move down here given the page-two contents
   \bg{cvgreen}{white}{Soft Skills} \\[0.5em]
-
-\item Communication
-\item Critical Thinking
-\item Detail-Oriented
-\item Interpersonal Collaboration
-\item Organization
-\item Presentation and Speaking
-\item Problem Solving
-
+  \begin{itemize}
+    \item Communication
+    \item Critical Thinking
+    \item Detail-Oriented
+    \item Interpersonal Collaboration
+    \item Organization
+    \item Presentation and Speaking
+    \item Problem Solving
+  \end{itemize}
   \bigskip
 
-
-  \bg{cvgreen}{white}{Contact} \\[0.5em]
-
-  \infobubble{\faEnvelope}{cvgreen}{white}{irhett@pm.me}
-  \infobubble{\faPhone}{cvgreen}{white}{Signal: \href{https://signal.me/\#eu/n6vUIaa2hD\_QyqnlLw0l8St7NPlS4kB91YU0XvO7ToLoG6uvamZExYdkxViihQ7g}{irhett.42}}
-  \infobubble{\faLinkedin}{cvgreen}{white}{\href{https://www.linkedin.com/in/irhett/}{irhett}}
-  \infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/izcet/}{izcet}}
-  \infobubble{\faAt}{cvgreen}{white}{\href{https://matrix.to/\#/@irhett:matrix.org}{@irhett:matrix.org}}
-
+  % CR: uwu wut r dis? (it doesn't seem to do anything?)
   \phantom{turn the page}
-
+  
   \phantom{turn the page}
   }
   %-----------------------------------------------------------
@@ -152,55 +168,74 @@
   \section*{Work Experience}
   \begin{tabular}{p{0.58\textwidth} c}
     \cveventtwo{Sabbatical ~•~ Recurse Center}{2024--2025}{NYC \color{cvred}}{
-      %\bpt Led a git trunk-based oneshot strategy in a game jam. On our team of \textbf{5 contributers}, we had more than \textbf{100 commits over 3 days}, with \textbf{\href{https://github.com/sedson/sludge-game/commits/main/}{zero merge noise}}.
-      \bpt Led a git trunk-based oneshot strategy in a game jam. On our team of 5 contributers, we had more than 100 commits over 3 days, with \href{https://github.com/sedson/sludge-game/commits/main/}{zero merge noise}.
+        % CR: I probably should have defined these itemize styles as a new command instead of repeating 
+        %     everywhere, but DRY is overrated anyway.
+        \vspace{-3mm}
+        \begin{itemize}[leftmargin=4mm, itemsep=0.3mm]
+            %\bpt Led a git trunk-based oneshot strategy in a game jam. On our team of \textbf{5 contributers}, we had more than \textbf{100 commits over 3 days}, with \textbf{\href{https://github.com/sedson/sludge-game/commits/main/}{zero merge noise}}.
+            
+            \item Led a git trunk-based oneshot strategy in a game jam. On our team of 5 contributers, we had more than 100 commits over 3 days, with \href{https://github.com/sedson/sludge-game/commits/main/}{zero merge noise}.
 
-      \bpt Self-taught the internals of the Firefox web browser. Built tools, tailored task-oriented profiles, and utilized enterprise policies to harden the browser's privacy features.
+            \item Self-taught the internals of the Firefox web browser. Built tools, tailored task-oriented profiles, and utilized enterprise policies to harden the browser's privacy features.
 
-      \bpt Wrote an \href{https://github.com/izcet/--.bf/blob/main/--.bf}{esoteric program} in a minimal instruction set language.
-
-      % \bpt Won the Recurse Center's Halloween costume contest as The Installation Wizard. Burned more than a terabyte of data to thumbdrives as bootable linux ISOs, with the project files, security tools, and my contact information as a discoverable easter egg.
-      % \bpt Self-taught Firejail, the app sandboxing
+            \item Wrote an \href{https://github.com/izcet/--.bf/blob/main/--.bf}{esoteric program} in a minimal instruction set language.
+            
+            % \bpt Won the Recurse Center's Halloween costume contest as The Installation Wizard. Burned more than a terabyte of data to thumbdrives as bootable linux ISOs, with the project files, security tools, and my contact information as a discoverable easter egg.
+            % \bpt Self-taught Firejail, the app sandboxing
+      \end{itemize}
 
       % I think these look bad as the only technical points to have for (what appears to be) a year of sabbatical.
       % Should I leave them out, move the git brag to the Projects/Sludge Game text?
     }{logos/recurse.png} \\
     \cveventtwo{Security Engineer, Android Security Operations ~•~ Google}{2022--2024}{Mountain View \color{cvred}}{
-      \bpt Led malware/policy investigations for apps and SDKs on the Google Play Store, involving reverse engineering,
-      unpacking, deobfuscation, and creating automated detection.
-
-      \bpt Increased code coverage of sensitive API abuse through integrating static analysis, dynamic analysis, and internal tooling. The increased coverage immediately detected previously-unknown malicious SDks, which I triaged, investigated, and removed from Play. 
-
-      \bpt Identified privacy risks and data collection behaviors on the Google Play Store, resulting in the takedown or remediation of tens of thousands of apps.
-
-      \bpt Provided technical expertise to management, legal, and cross-functional teams during sensitive escalations.
-      %\bpt Maintained a dashboard of ongoing detections, investigations, coverage, and enforcement of apps and SDKs, which provided a single source of truth artifact for cross-functional organization.
+        \vspace{-3mm}
+        \begin{itemize}[leftmargin=4mm, itemsep=0.3mm]
+            \item Led malware/policy investigations for apps and SDKs on the Google Play Store, involving reverse engineering, unpacking, deobfuscation, and creating automated detection.
+            
+            \item Increased code coverage of sensitive API abuse through integrating static analysis, dynamic analysis, and internal tooling. The increased coverage immediately detected previously-unknown malicious SDks, which I triaged, investigated, and removed from Play. 
+            
+            \item Identified privacy risks and data collection behaviors on the Google Play Store, resulting in the takedown or remediation of tens of thousands of apps.
+      
+            \item Provided technical expertise to management, legal, and cross-functional teams during sensitive escalations.
+            
+            %\bpt Maintained a dashboard of ongoing detections, investigations, coverage, and enforcement of apps and SDKs, which provided a single source of truth artifact for cross-functional organization.
+    \end{itemize}
     }{logos/google.png} \\
     \cveventtwo{Security Intelligence Engineer ~•~ Lookout}{2018-2022}{Boston \color{cvred}}{
-      \bpt Maintained a realtime static analysis pipeline that analyzed hundreds of millions of mobile apps across iOS and Android, and automated threat detection.
+        \vspace{-3mm}
+        \begin{itemize}[leftmargin=4mm, itemsep=0.3mm]
+            \item Maintained a realtime static analysis pipeline that analyzed hundreds of millions of mobile apps across iOS and Android, and automated threat detection.
 
-      \bpt Completely owned and maintained the service architecture, from software development, code review, automated testing, build verification, staging and production checks, through metrics reporting, post-deployment monitoring, and on-call incident response.
+            \item Completely owned and maintained the service architecture, from software development, code review, automated testing, build verification, staging and production checks, through metrics reporting, post-deployment monitoring, and on-call incident response.
 
-      \bpt Added IAM security policies and network access rules across the fleet of instances. 
+            \item Added IAM security policies and network access rules across the fleet of instances. 
 
-      \bpt Rotated signing keys used by the security OTA update infrastructure on a regular cadence.
+            \item Rotated signing keys used by the security OTA update infrastructure on a regular cadence.
 
-      \bpt Wrote tests to prevent data loss, adding DB schema backward compatibility checks.
+            \item Wrote tests to prevent data loss, adding DB schema backward compatibility checks.
 
-      \bpt Created a tool for surfacing insecure coding practices, such as hardcoded API credentials, in apps analyzed by the security platform.
+            \item Created a tool for surfacing insecure coding practices, such as hardcoded API credentials, in apps analyzed by the security platform.
 
-      \bpt Reverse engineered malicious apps as necessary to improve the analysis engine.
+            \item Reverse engineered malicious apps as necessary to improve the analysis engine.
 
-      \bpt Won first place in the 2021 company-wide \href{https://www.securecodewarrior.com/}{Secure Code Warrior} challenge competition.
+            \item Won first place in the 2021 company-wide \href{https://www.securecodewarrior.com/}{Secure Code Warrior} challenge competition.
+        \end{itemize}
     }{logos/lookout2.png} \\
-    \cveventtwo{Internship ~•~ OtoSense / Analog Devices}{2018}{Palo Alto \color{cvred}}{\bpt Created a CLI visualizer for audio input, used on headless remote devices over SSH. This sped up customer deployment by adding quick sanity checks during installation.
+    \cveventtwo{Internship ~•~ OtoSense / Analog Devices}{2018}{Palo Alto \color{cvred}}{
+        \vspace{-3mm}
+        \begin{itemize}[leftmargin=4mm, itemsep=0.3mm]
+            \item Created a CLI visualizer for audio input, used on headless remote devices over SSH. This sped up customer deployment by adding quick sanity checks during installation.
 
-    \bpt Processed CAN bus data in embedded C, used Python to integrate with classic ML anomaly detection systems. Correlating multiple data sources supported the core mission by increasing accuracy of our models in industrial applications.
+            \item Processed CAN bus data in embedded C, used Python to integrate with classic ML anomaly detection systems. Correlating multiple data sources supported the core mission by increasing accuracy of our models in industrial applications.
 
-    \bpt Implemented a handheld touch UI for a single-board computer used in customer demos.
+            \item Implemented a handheld touch UI for a single-board computer used in customer demos.
+    \end{itemize}
     }{logos/otosense.jpg} \\
     \cveventtwo{Instructor ~•~ Code For Fun}{2017--2018}{Fremont \color{cvred}}{
-      \bpt Engaged more than 40 high school students in CS and security using Python.
+        \vspace{-3mm}
+        \begin{itemize}[leftmargin=4mm, itemsep=0.3mm]
+            \item Engaged more than 40 high school students in CS and security using Python.
+        \end{itemize}
     }{logos/codeforfun.jpeg}
   \end{tabular}
 
@@ -217,37 +252,59 @@
     \href{https://github.com/izcet/fractol}{Fractol} & A parallelized fractal renderer in C including side projects for color generation. 
     % installation wizard?
   \end{tabular}
-
+  
+  \pagebreak 
+  
   \section*{Leadership, Activities, and Volunteering}
   \begin{tabular}{p{0.6\textwidth} c}
-    \cveventthree{Mentor ~•~ Local Community Tech Literacy}{2024--2025}{Brooklyn \color{cvred}}{\bpt
-    Helped a neighor build their first desktop computer from scratch. In two (nonconsecutive) days I taught \href{https://github.com/izcet/pc-build}{computer hardware}, budget tips, hands-on assembly, and linux installation.
+    \cveventthree{Mentor ~•~ Local Community Tech Literacy}{2024--2025}{Brooklyn \color{cvred}}{
+        \vspace{-3mm}
+        \begin{itemize}[leftmargin=4mm, itemsep=0.3mm]
+            \item Helped a neighor build their first desktop computer from scratch. In two (nonconsecutive) days I taught \href{https://github.com/izcet/pc-build}{computer hardware}, budget tips, hands-on assembly, and linux installation.
     
-    \bpt Supported a member of the community switch careers from retail with curriculum nudges, resume feedback, and interview prep. With my help they successfully landed a higher-paying datacenter tech role in less than 4 months.} \\
-    \cveventthree{Student Ambassador ~•~ 42 Silicon Valley}{2016--2018}{SF Bay Area \color{cvred}}{\bpt
-      Represented the school, helping to orient and share knowledge with new students.
-
-      \bpt Positively impacted numerous onsite, offsite, and extracurricular events.
-
-      \bpt Volunteered at the Google Developer Group (GDG) 2017 Summit.
+            \item Supported a member of the community switch careers from retail with curriculum nudges, resume feedback, and interview prep. With my help they successfully landed a higher-paying datacenter tech role in less than 4 months.
+        \end{itemize}
     } \\
-    \cveventthree{Co-Founder, President, Lead Organizer ~•~ 42 Unix Club}{2016--2018}{Fremont \color{cvred}}{\bpt
-      Built and maintained a Debian multi-user server (micro-pubnix) which authenticated to the school's LDAP system over Kerberos. Students used this machine to access school Git projects by \href{https://github.com/izcet/ssh_tunnel}{SSH proxy} when they weren't on the local network.
+    \cveventthree{Student Ambassador ~•~ 42 Silicon Valley}{2016--2018}{SF Bay Area \color{cvred}}{
+        \vspace{-3mm}
+        \begin{itemize}[leftmargin=4mm, itemsep=0.3mm]
+            \item Represented the school, helping to orient and share knowledge with new students.
+        
+            \item Positively impacted numerous onsite, offsite, and extracurricular events.
+        
+            \item Volunteered at the Google Developer Group (GDG) 2017 Summit.
+        \end{itemize}
+    } \\
+    \cveventthree{Co-Founder, President, Lead Organizer ~•~ 42 Unix Club}{2016--2018}{Fremont \color{cvred}}{
+        \vspace{-3mm}
+        \begin{itemize}[leftmargin=4mm, itemsep=0.3mm]
+            \item Built and maintained a Debian multi-user server (micro-pubnix) which authenticated to the school's LDAP system over Kerberos. Students used this machine to access school Git projects by \href{https://github.com/izcet/ssh_tunnel}{SSH proxy} when they weren't on the local network.
 
-      \bpt Assisted with installation, dual-booting, disk/data recovery, or other side projects.
-      } \\
+            \item Assisted with installation, dual-booting, disk/data recovery, or other side projects.
+        \end{itemize}
+    } \\
     \cveventthree{Member ~•~ 42 Reverse Engineering Club}{2018}{Fremont \color{cvred}}{
-      \bpt Competitively disassembled "crack-me" binaries using Radare2.
+        \vspace{-3mm}
+        \begin{itemize}[leftmargin=4mm, itemsep=0.3mm]
+            \item Competitively disassembled "crack-me" binaries using Radare2.
+        \end{itemize}
     } \\
-    \cveventthree{Member ~•~ 42 Hardware Club}{2017}{Fremont \color{cvred}}{\bpt
-    Picked up CAD and 3D printing to rapidly prototype custom housings for SBC hardware.
+    \cveventthree{Member ~•~ 42 Hardware Club}{2017}{Fremont \color{cvred}}{
+        \vspace{-3mm}
+        \begin{itemize}[leftmargin=4mm, itemsep=0.3mm]
+            \item Picked up CAD and 3D printing to rapidly prototype custom housings for SBC hardware.
+            
+            \item Learned soldering, Arduino, and AdaFruit NeoPixel to build and program RGB LED strips.
+        \end{itemize}
 
-    \bpt Learned soldering, Arduino, and AdaFruit NeoPixel to build and program RGB LED strips.
     } \\
-    \cveventthree{Mentor ~•~ Hackathons}{2017}{SF Bay Area \color{cvred}}{\bpt 
-      Provided on-the-ground mentorship support in events ranging from 30 to 700+ attendees.
+    \cveventthree{Mentor ~•~ Hackathons}{2017}{SF Bay Area \color{cvred}}{
+        \vspace{-3mm}
+        \begin{itemize}[leftmargin=4mm, itemsep=0.3mm]
+            \item Provided on-the-ground mentorship support in events ranging from 30 to 700+ attendees.
 
-      \bpt Silicon Hacks, Tino Hacks, Base Hacks, and Los Altos Hacks II.
+            \item Silicon Hacks, Tino Hacks, Base Hacks, and Los Altos Hacks II.
+        \end{itemize}
     }
   \end{tabular}
   \vspace{3em}
