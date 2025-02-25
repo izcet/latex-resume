@@ -10,10 +10,10 @@ pdflatex main.tex
 
 # clean up intermediate steps
 mkdir -p out
-mv *.out *.log *.aux out/
+mv ./*.out ./*.log ./*.aux out/
 
 # render the newly built resume
-ps -ax | grep -i okular | grep -v grep || okular main.pdf &
+pgrep okular || okular main.pdf &
 
 # create a release file
 cp main.pdf "Isaac_Rhett_${TIMESTAMP}_${COMPANY}.pdf"
